@@ -206,9 +206,11 @@ public class BattleField extends JPanel {
     }
 
     void drawTeamWin(Graphics g, Team team) {
-        Draw.drawDiamond(g, BF_WIDTH / 2, BF_HEIGHT / 2, 100, 30, 10, team.getColorMain());
-        g.setColor(new Color(250, 0, 0));
-        g.drawString("Team " + team.getName() + " WIN!", BF_WIDTH / 2 - 50, BF_HEIGHT / 2 + 5);
+        Draw.drawDiamond(g, BF_WIDTH / 2, BF_HEIGHT / 2, 100, 30, 5, new Color(100, 250, 250));
+//        g.setColor(new Color(250, 0, 0));
+        g.setColor(team.getColorMain());
+        g.setFont(g.getFont().deriveFont(20.0f));
+        g.drawString("Team " + team.getName() + " WIN!", BF_WIDTH / 2 - 80, BF_HEIGHT / 2 + 5);
     }
 
 
