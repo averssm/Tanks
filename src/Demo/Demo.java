@@ -2,9 +2,7 @@ package Demo;
 
 import Services.BattleField;
 
-import javax.swing.*;
-
-public class Demo extends JPanel {
+public class Demo {
 
     public static void main(String[] args) throws Exception {
         BattleField bf = new BattleField();
